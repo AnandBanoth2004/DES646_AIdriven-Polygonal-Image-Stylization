@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# AI-driven Polygonal Image Stylization
-=======
 # DES646_AI-driven-Polygonal-Image-Stylization
->>>>>>> 1b49c274573f719208de76a87dc2a88c88518537
 
 **Bridging Algorithmic Art and Machine Learning Design**
 
