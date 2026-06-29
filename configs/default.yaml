@@ -1,0 +1,41 @@
+# Global defaults
+device: "cpu"   # or "cuda"
+image_size: 512
+batch_size: 2
+epochs: 40
+lr: 0.0002
+beta1: 0.5
+beta2: 0.999
+lambda_L1: 100.0
+lambda_perc: 10.0  # perceptual (VGG) loss weight
+
+# Data paths
+data:
+  images_dir: "data/images"
+  targets_dir: "data/targets/triangles_256"
+  train_split: 0.8
+
+# Data augmentation
+augment:
+  hflip: true
+  rotate_deg: 10
+  brightness: 0.1
+  contrast: 0.1
+  saturation: 0.1
+  hue: 0.02
+
+# Triangulation params
+triangulate:
+  point_count: 800
+  blur_sigma: 1.0
+  edge_threshold: 50.0
+  color_mode: "mean"   # mean | centroid
+  rectangles: false
+  quadtree:
+    min_size: 8
+    variance_thresh: 12.0
+
+# Checkpoints
+checkpoints:
+  out_dir: "checkpoints"
+  pix2pix_name: "pix2pix_unet_patchgan.pt"
